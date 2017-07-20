@@ -16,3 +16,13 @@ var range = function (num1, num2) {
   }
   return rangeValues;
 }
+
+var sum = function (range) {
+  var total = 0;
+  var counter = 0;
+  while (counter < (range.length)) {
+    total += range[counter];
+    counter += 1;
+  }
+  return total;
+}
