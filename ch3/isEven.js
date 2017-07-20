@@ -6,6 +6,6 @@ var isEven = function(num) {
     return false;
   }
   else {
-    return isEven(num-2);
+    return isEven(Math.abs(num-2));
   }
 };
