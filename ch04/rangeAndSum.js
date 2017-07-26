@@ -1,8 +1,8 @@
 var range = function (num1, num2, step) {
   rangeValues = [];
-  if (num1 < num2 == true) {
-    counter = num1;
-    while (counter < (num2 + 1)) {
+  counter = num1;
+    if (num1 > num2) {
+    while (counter >= num2) {
       rangeValues.push(counter);
       if (step > 0 == true) {
         counter += step;
@@ -14,8 +14,7 @@ var range = function (num1, num2, step) {
     }
   }
   else {
-    counter = num2;
-    while (counter < (num1 + 1)) {
+    while (counter <= num2) {
       rangeValues.push(counter);
       if (step > 0 == true) {
         counter += step;
