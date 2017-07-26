@@ -5,10 +5,10 @@ var range = function (num1, num2, step) {
     while (counter >= num2) {
       rangeValues.push(counter);
       if (step > 0 == true) {
-        counter += step;
+        counter -= step;
       }
       else if (step < 0 == true){
-        counter -= step;
+        counter += step;
       }
       else counter += 1;
     }
