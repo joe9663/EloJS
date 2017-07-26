@@ -1,16 +1,28 @@
-var range = function (num1, num2) {
+var range = function (num1, num2, step) {
   rangeValues = [];
   counter = num1;
     if (num1 > num2) {
     while (counter >= num2) {
       rangeValues.push(counter);
-      counter -= 1;
+      if (step > 0 == true) {
+        counter += step;
+      }
+      else if (step < 0 == true){
+        counter -= step;
+      }
+      else counter += 1;
     }
   }
   else {
     while (counter <= num2) {
       rangeValues.push(counter);
-      counter += 1;
+      if (step > 0 == true) {
+        counter += step;
+      }
+      else if (step < 0 == true){
+        counter -= step;
+      }
+      else counter += 1;
     }
   }
   return rangeValues;
